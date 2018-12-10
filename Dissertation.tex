@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\begin{document}
+\title{Modelling Low Earth Orbit Constellations for Networking}
+\author{Joseph McGuchan}
+\maketitle
+\thispagestyle{empty}
+
+\section{Introduction}
+
+SpaceX are planning to launch a constellation of 4,425 low Earth orbit communication satellites in the next few years. The objective of this constellation, called Starlink, is to provide low-latency internet connection across the world.
+
+The satellites in this network will be in constant motion, not just relative to the ground, but relative to one another, creating a network with a constantly changing topology and associated latencies. The question of how to route signals across such a network has not been thoroughly explored, but it will become increasingly relevant as more and more companies build similar constellations.
+
+My goals are:
+\begin{enumerate}
+	\item To develop multiple routing algorithms for this network.
+	\item To compare these algorithms on latency, fault tolerance, and response to high demand.
+	\item To create visualisations of these routing algorithms at work.
+\end{enumerate}
+
+This network, and networks like it, are the future of the internet.
+
+%TODO
+
+\section{What is Starlink?}
+
+%TODO
+
+As of 21/11/18, there are two companies offering sattelite internet services, Excede\cite{ExcedeWebsite}, and Hughes, whose 9202 BGAN Land Portable Satellite Terminal offers connection speeds up to 464kbps\cite{HughesWebsite}. These companies largely target domestic use in rural areas which don’t have a faster coverage, and corporations, providing internet connections to airplanes and cargo ships. Currently, Sattelite Internet connection is a last resort, something turned to when conventional means of connection are not available, Starlink intends to invert this, turning sattelite internet into the premium option, 
+
+%TODO
+
+SpaceX have already sent up two test sattelites, and according the Elon Musk, they are working very well, providing a latency of only 25ms\cite{ElonMuskTweet}.
+
+%TODO
+
+\subsection{The Structure of Starlink}
+
+There is a lot we do not know about Starlink, but this is what we can infer from SpaceX’s application to the FCC\cite{FCCApplication}, and their technical attachment\cite{TechnicalAttachment}.
+
+
+
+
+\begin{thebibliography}{9}
+\bibitem{ExedeWebsite} https://www.exede.com/
+\bibitem{HughesWebsite} https://www.hughes.com/
+\bibitem{ElonMuskTweet} https://twitter.com/elonmusk/status/1000453321121923072.
+\bibitem{FCCApplication} licensing.fcc.gov/cgi-bin/ws.exe/prod/ib/forms/reports/related_filing.hts?f_key=-289550&f_number=SATLOA2016111500118
+\bibitem{TechnicalAttachment} https://licensing.fcc.gov/myibfs/download.do?attachment_key=1158350
+\end{thebibliography}
+
+\end{document}
